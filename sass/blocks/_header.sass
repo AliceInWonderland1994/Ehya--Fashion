@@ -1,0 +1,60 @@
+.header
+    background-color: $light
+    &-wrapper
+        height: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__container
+        max-width: 1140px
+        width: 90%
+        margin: auto
+    &-button
+        display: none
+        width: 22px
+        height: 18px
+        padding: 0
+        align-items: center
+        flex-direction: column
+        justify-content: space-between
+        background-color: $light 
+        border: none
+        outline: none
+        cursor: pointer
+        &__line
+            height: 2px
+            width: 22px
+            background-color: $dark
+.nav
+    &__ul
+        display: flex
+        list-style: none
+        align-items: center
+        padding: 0
+        margin: 0
+    &__li:not(:first-child)
+        margin-left: 40px
+    &__link
+        text-decoration: none
+        color: $dark
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        &--arrow
+            margin-left: 4px
+            height: 100%
+            vertical-align: middle
+    &__button
+        color: $blue
+        background-color: $light
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+        border: 2px solid $blue
+        border-radius: 8px
+        padding: 13px 24px
+        cursor: pointer
+        outline: none
+.mobile
+    display: none
+
