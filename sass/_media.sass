@@ -165,28 +165,38 @@
     .hero
         padding: 24px 0 64px
         &__container
-            width: 95%
-            margin: auto
+            width: 100%
+            margin: 0
         &-wrapper
-            background-position: -40px -360px
+            background-position: -360px -360px
             &::before
-                left: -40px
+                bottom: 10
+                background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
         &__information
-            top: 36px
-            left: 28px
+            top: 381px
+            left: 20px
+            right: 20px
             bottom: 36px
+            display: flex
+            flex-direction: column
+            align-items: center
         &__hashtag
-            margin: 0 0 24px
+            font-size: 14px
+            line-height: 20px
+            padding: 2px 26px
+            margin: 0 0 20px
         &__title
-            font-size: 38px
-            line-height: 48px
-            max-width: 330px
-            margin: 0 0 20px 0
+            font-size: 32px
+            line-height: 40px
+            max-width: 280px
+            text-align: center
+            margin: 0 0 20px
         &__text
             font-size: 16px
             line-height: 28px
-            max-width: 330px
-            margin: 0 0 36px 0
+            max-width: 280px
+            text-align: center
+            margin: 0 0 22px 0
         &__button
             margin: 0 0 40px 0
     .advantages
