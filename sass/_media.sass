@@ -12,19 +12,19 @@
         &__container
             width: 95%
             margin: auto
-        &-wrapper
+        &__wrapper
             position: relative
             background-color: #E8EAE9
             overflow: hidden
             border-radius: 8px
             background-image: url(../img/hero-background.png)
             background-repeat: no-repeat
-            background-position: 400px -330px
+            background-position: 260px -330px
             &::before
                 content: ""
                 position: absolute
                 top: 0
-                left: 400px
+                left: 260px
                 bottom: 0
                 right: 0
                 width: 100%
@@ -40,7 +40,7 @@
         &__li:not(:first-child)
             margin-left: 30px
     .header
-        &-wrapper
+        &__wrapper
             height: 64px
         &-button
             &__line
@@ -49,12 +49,42 @@
         &__dark
             width: 89px
             height: 28px
+    
+
+@media (max-width: 768px)
+    .header
+        &__wrapper
+            height: 72px
+        &__container
+            max-width: 650px
+        &-button
+                display: flex
+        &__mobile
+    .nav
+        display: none
+    .mobile
+        &--visible
+            display: block
+            position: fixed
+            top: 11px
+            left: 11px
+            right: 11px
+            background-color: $light
+            box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
+            border-radius: 12px
+            padding: 36px 24px 26px
+            z-index: 150
+        &__close
+            position: absolute
+            right: 20px
+            top: 16px
     .hero
         padding: 30px 0 80px
         &__container
             width: 95%
             margin: auto
-        &-wrapper
+        &__wrapper
+            max-height: 624px
             background-position: 50px -360px
             &::before
                 left: 50px
@@ -81,72 +111,15 @@
     .advantages
         &__ul
             display: flex
-            flex-direction: column
+            align-items: flex-start
+            height: 36px
         &__li:not(:last-child)
             margin-right: 20px
             margin-bottom: 20px
 
-@media (max-width: 768px)
-    .header
-        &-wrapper
-            height: 72px
-        &__container
-            max-width: 650px
-        &-button
-                display: flex
-        &__mobile
-    .nav
-        display: none
-    .mobile
-        &--visible
-            display: block
-            position: fixed
-            top: 11px
-            left: 11px
-            right: 11px
-            background-color: $light
-            box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
-            border-radius: 12px
-            padding: 36px 24px 26px
-            z-index: 150
-        &__close
-            position: absolute
-            right: 20px
-            top: 16px
-    .hero
-        padding: 24px 0 64px
-        &__container
-            width: 95%
-            margin: auto
-        &-wrapper
-            background-position: -40px -360px
-            &::before
-                left: -40px
-        &__information
-            top: 36px
-            left: 28px
-            bottom: 36px
-        &__hashtag
-            margin: 0 0 24px
-        &__title
-            font-size: 38px
-            line-height: 48px
-            max-width: 330px
-            margin: 0 0 20px 0
-        &__text
-            font-size: 16px
-            line-height: 28px
-            max-width: 330px
-            margin: 0 0 36px 0
-        &__button
-            margin: 0 0 40px 0
-    .advantages
-        &__li:not(:last-child)
-            margin-right: 20px
-
 @media (max-width: 576px)
     .header
-        &-wrapper
+        &__wrapper
             height: 64px
         &__container
             width: 90%
@@ -155,7 +128,7 @@
         &__container
             width: 100%
             margin: 0
-        &-wrapper
+        &__wrapper
             background-position: -20px -360px
             &::before
                 left: -40px
@@ -167,7 +140,7 @@
             width: 100%
             margin: 0
             right: 0
-        &-wrapper
+        &__wrapper
             min-height: 899px
             bottom: 0
             left: 0
