@@ -24,3 +24,35 @@ $(document).ready(function () {
         $(this).addClass("items__li--active");
     });
 });
+
+let mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    keyboard: true,
+    speed: 500,
+    autoplay: true,
+    delay: 6000,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+        init() {
+          this.el.addEventListener('mouseenter', () => {
+            this.autoplay.stop();
+          });
+    
+          this.el.addEventListener('mouseleave', () => {
+            this.autoplay.start();
+          });
+        }
+      },
+});
