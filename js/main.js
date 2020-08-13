@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 });
 
-let mySwiper = new Swiper('.swiper-container', {
+let mySwiper = new Swiper('.slider1', {
     // Optional parameters
     loop: true,
     keyboard: true,
@@ -72,3 +72,15 @@ document.onkeydown = function (evt) {
       closeModal(evt)
   }
 };
+
+let mySwiper = new Swiper('.slider2', {
+  // Optional parameters
+  loop: true,
+  keyboard: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
+  },
+});
