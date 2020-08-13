@@ -129,6 +129,18 @@
                 object-position: -120px -5px
     .card-collection
         width: 280px
+    .feedback
+        &__container
+            max-width: 630px
+            margin: auto
+            padding: 0 0 80px
+        &__quote
+            margin-bottom: 12px
+        &__text
+            margin-bottom: 36px
+        &__author
+            margin-bottom: 41px
+
 @media (max-width: 768px)
     .header
         &__wrapper
@@ -271,7 +283,7 @@
                 object-position: -120px -5px
     .card-collection
         width: 280px
-    
+        
 @media (max-width: 740px)
     .items
         &__container
@@ -422,6 +434,26 @@
             justify-content: center
         &__arrow
             margin-left: 30px
+    .feedback
+        &__container
+            max-width: 90%
+            margin: auto
+            padding: 0 0 64px
+        &__quote
+            height: 81px
+            width: 70px
+            margin-bottom: 13px
+        &__text
+            font-size: 18px
+            line-height: 36px
+            margin-bottom: 24px
+        &__author
+            margin-bottom: 29px
+            display: flex
+            flex-direction: column
+        &__name
+            &::before
+                content: "- "
 
 @media (max-width: 640px)
     .card-collection
