@@ -156,18 +156,42 @@
         &--visible
             display: block
             position: fixed
-            top: 11px
-            left: 11px
-            right: 11px
-            background-color: $light
+            top: 10px
+            left: 8px
+            right: 8px
+            background-color: #ffffff
             box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
-            border-radius: 12px
-            padding: 36px 24px 26px
+            padding: 36px 24px
             z-index: 150
+            height: 284px
         &__close
             position: absolute
             right: 20px
             top: 16px
+    .menu
+        &__ul
+            list-style: none
+            margin: 0
+            padding: 0
+        &__li
+            margin-bottom: 20px
+        &__link
+            text-decoration: none
+            font-weight: 600
+            font-size: 16px
+            line-height: 22px
+            text-align: center
+            color: $dark
+        &__button
+            font-weight: bold
+            font-size: 16px
+            line-height: 22px
+            color: $blue
+            background-color: #fff
+            width: 100%
+            padding: 9px
+            border: 2px solid $blue
+            border-radius: 8px
     .hero
         padding: 30px 0 80px
         &__container
@@ -324,7 +348,7 @@
             width: 100%
             height: 64px
             z-index: 100
-            padding: 13px 24px 4px 0
+            padding: 13px 4px 4px 0
         &__wrapper
             height: 170px
             width: 140px
@@ -454,22 +478,6 @@
         &__name
             &::before
                 content: "- "
-    .mobile
-        &--visible
-            display: block
-            position: fixed
-            top: 10px
-            left: 8px
-            right: 8px
-            background-color: #ffffff
-            box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16)
-            border-radius: 12px
-            padding: 36px 24px
-            z-index: 150
-        &__close
-            position: absolute
-            right: 20px
-            top: 16px
 
 @media (max-width: 640px)
     .card-collection
@@ -598,6 +606,9 @@
             justify-content: center
         &__arrow
             margin-left: 30px
+    .items
+        &__li:not(:last-child)
+            margin-right: 14px
     .card-collection
         height: 170px
         width: 140px

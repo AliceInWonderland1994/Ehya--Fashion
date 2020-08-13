@@ -56,3 +56,19 @@ let mySwiper = new Swiper('.swiper-container', {
         }
       },
 });
+
+const closeButton = $(".mobile__close");
+closeButton.on("click", closeModal);
+
+function closeModal(event) {
+  event.preventDefault();
+  let mobileMenu = $(".mobile");
+  mobileMenu.removeClass("mobile--visible");
+  event.stopPropagation();
+}
+document.onkeydown = function (evt) {
+  evt = evt || window.event;
+  if (evt.keyCode === 27) {
+      closeModal(evt)
+  }
+};
