@@ -61,6 +61,27 @@
             padding: 0 0 32px 0
     .card-collection
         width: 65%
+    .story
+        &__container
+            width: 90%
+        &__wrapper
+            padding: 80px 0 80px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__info
+            flex-direction: column
+            align-items: center
+        &__title
+            width: 100%
+            margin-bottom: 16px
+            text-align: center
+        &__text
+            width: 510px
+            margin-bottom: 36px
+            text-align: center
+        &__button
+            margin-bottom: 36px
 
 @media (max-width: 992px)
     .nav
@@ -307,7 +328,7 @@
                 object-position: -120px -5px
     .card-collection
         width: 280px
-        
+
 @media (max-width: 740px)
     .items
         &__container
@@ -478,6 +499,34 @@
         &__name
             &::before
                 content: "- "
+    .story
+        &__container
+            width: 95%
+            margin: auto
+        &__wrapper
+            padding: 48px 0 64px
+        &__title
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 16px
+            width: 100%
+        &__text
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 36px
+            width: 90%
+    .slider
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 100%
+        &-button
+            &-prev
+                padding: 17px 17px 15px 18px
+            &-next
+                padding: 17px 17px 15px 18px
+    .slider2
+        width: 100%
 
 @media (max-width: 640px)
     .card-collection
