@@ -28,7 +28,6 @@ $(document).ready(function () {
 let mySwiper = new Swiper('.slider1', {
     // Optional parameters
     loop: true,
-    keyboard: true,
     speed: 500,
     autoplay: true,
     delay: 6000,
@@ -73,14 +72,14 @@ document.onkeydown = function (evt) {
   }
 };
 
-let mySwiper = new Swiper('.slider2', {
+let mySwiper2 = new Swiper('.slider2', {
   // Optional parameters
   loop: true,
   keyboard: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.slider-button-next',
+    prevEl: '.slider-button-prev',
   },
 });
