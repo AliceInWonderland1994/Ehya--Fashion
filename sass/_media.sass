@@ -378,6 +378,50 @@
                 letter-spacing: 0.2px
                 color: #fff
                 margin: 21px 0 0
+    .collection
+        &__container
+            width: 90%
+            margin: auto
+        &__wrapper
+            display: flex
+            padding: 0 0 64px 0
+        &__pictures
+            flex-direction: column
+            width: 100%
+        &__image
+            width: 100%
+            object-fit: cover
+            margin: 0
+            &--big
+                height: 300px
+            &--little
+                width: 48%
+                height: 97px
+        &__little-pictures
+            display: flex
+            flex-direction: row
+            margin-top: 14px
+            height: 97px
+            margin-bottom: 36px
+            width: inherit
+        &__info
+            padding: 0
+        &__title
+            font-size: 28px
+            line-height: 36px
+            margin: 0 0 16px 0
+            display: flex
+            justify-content: center
+        &__text
+            font-size: 16px
+            line-height: 28px
+            margin-bottom: 24px
+            text-align: center
+        &__link
+            display: flex
+            justify-content: center
+        &__arrow
+            margin-left: 30px
 
 @media (max-width: 640px)
     .card-collection
@@ -398,7 +442,6 @@
             background-position: -20px -360px
             &::before
                 left: -40px
-
 
 @media (min-width: 230px) and (max-width: 480px)
     .hero
