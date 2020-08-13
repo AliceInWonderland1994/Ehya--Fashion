@@ -1,0 +1,40 @@
+.newsletter
+    background-color: $blue
+    &__container
+        max-width: 1077px
+        margin: auto
+    &__wrapper
+        padding: 100px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__oval
+        position: absolute
+        &--before
+            left: 0
+            width: 95%
+            object-position: -720px -870px
+        &--after
+            right: 0
+            width: 95%
+            object-position: 620px -100px
+
+    &__text
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+    &__title
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        letter-spacing: 0.2px
+        color: #ffffff
+        margin-bottom: 14px
+    &__description
+        font-size: 18px
+        line-height: 32px
+        color: #ffffff
+        width: 490px
+        
