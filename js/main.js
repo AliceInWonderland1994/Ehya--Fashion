@@ -80,7 +80,7 @@ let mySwiper = new Swiper('.slider2', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button-next',
-    prevEl: '.slider-button-prev',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
