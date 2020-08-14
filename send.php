@@ -50,7 +50,7 @@ try {
     $mail->setFrom('lsd_1994@mail.ru', 'Алиса Васяткина'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('alicemint@mail.ru');  
+    $mail->addAddress('ivanovanton.web@gmail.com');  
 
 
 // Отправка сообщения
