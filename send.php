@@ -68,11 +68,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-if(empty($email)){
-    header($thankyouHeader);
-
-}
-else{
-    header($subsribeHeader);
-}
-?>
+header("Location: subscribe.html");

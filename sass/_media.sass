@@ -84,9 +84,21 @@
             margin-bottom: 36px
     .newsletter
         &__container
-            max-width: 80%
+            width: 80%
+            margin: auto
         &__wrapper
             flex-direction: column
+            padding: 72px 0 80px
+        &__oval
+            position: absolute
+            &--before
+                left: 0
+                width: 100%
+                object-position: -485px -680px
+            &--after
+                right: 0
+                width: 100%
+                object-position: 500px 300px
         &__title
             margin-bottom: 14px
         &__description
@@ -339,6 +351,17 @@
                 object-position: -120px -5px
     .card-collection
         width: 280px
+    .newsletter
+        &__oval
+            position: absolute
+            &--before
+                left: 0
+                width: 100%
+                object-position: -430px -480px
+            &--after
+                right: 0
+                width: 100%
+                object-position: 380px 300px
 
 @media (max-width: 740px)
     .items
@@ -566,6 +589,56 @@
             background-position: -20px -360px
             &::before
                 left: -40px
+    .newsletter
+        &__container
+            width: 90%
+            margin: auto
+            padding: 64px 0 64px
+            height: 414px
+        &__wrapper
+            flex-direction: column
+            width: 100%
+            padding: 0
+        &__text
+            width: 100%
+        &__title
+            font-size: 28px
+            line-height: 36px
+            margin-bottom: 24px
+            width: 100%
+            text-align: center
+        &__description
+            font-size: 16px
+            line-height: 28px
+            width: 100%
+            text-align: center
+            margin: auto
+        &__form
+            width: 100%  
+            margin-top: 36px
+        &__input
+            height: 48px
+        &__button
+            position: static
+            width: 100%
+            border-radius: 8px
+            top: 0
+            right: 0
+            bottom: 0
+            padding: 12px 24px 11px 
+        &__image
+            top: 20px
+        &__oval
+            position: absolute
+            &--before
+                width: 100%
+                object-position: -230px -100px
+            &--after
+                display: none
+        .error
+            margin: 0
+            font-size: 10px
+            
 
 @media (min-width: 320px) and (max-width: 480px)
     .hero
