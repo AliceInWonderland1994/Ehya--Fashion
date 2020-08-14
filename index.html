@@ -557,8 +557,9 @@
                 </div>
                 <!-- /.newsletter__text -->
                 <div class="newsletter__subscribe">
-                    <form action="#" class="newsletter__form">
-                        <input type="email" name="email" required minlength="6">
+                    <form action="send.php" method="POST" class="newsletter__form">
+                        <img class="newsletter__image" src="img/email.svg" alt="Icon: email">
+                        <input class="newsletter__input" type="email" name="email" placeholder="Your Email" required minlength="6">
                         <button class="newsletter__button">Subscribe</button>
                     </form>
                 </div>
