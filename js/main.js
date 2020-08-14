@@ -83,3 +83,18 @@ let mySwiper2 = new Swiper('.slider2', {
     prevEl: '.slider-button-prev',
   },
 });
+
+$(".newsletter__form").each(function() {
+  $(this).validate({
+    errorClass: "error",
+    messages: {
+      subscribe: {
+        required: "This field is empty",
+        email: "Your email address must be in the format of name@domain.com",
+      },
+    },
+  });
+});
+
+$(".newsletter__form").validate();
+
