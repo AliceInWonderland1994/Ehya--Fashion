@@ -101,9 +101,20 @@
                 object-position: 500px 300px
         &__title
             margin-bottom: 14px
+            text-align: center
+            width: 100%
         &__description
             text-align: center
             margin-bottom: 56px
+    .footer
+        &__container
+            width: 90%
+    .product, .services, .company
+        margin-right: 15px
+        width: 145px
+    .social
+        margin-right: 20px
+            
 
 
 @media (max-width: 992px)
@@ -184,6 +195,30 @@
             margin-bottom: 36px
         &__author
             margin-bottom: 41px
+    .footer
+        &__container
+            max-width: 672px
+            margin: auto
+            padding: 64px 0 64px
+        &__wrapper
+            max-width: 641px
+        &__items
+            flex-wrap: wrap
+        &__top
+            margin-bottom: 0
+    .social
+        width: 253px
+        margin-right: 30px
+        &__li
+            margin-right: 6px
+    .product
+        margin-right: 28px
+        margin-bottom: 48px
+    .company
+        margin-right: 28px
+    .services
+        margin-right: 0
+        margin-bottom: 48px
 
 @media (max-width: 768px)
     .header
@@ -569,6 +604,61 @@
             padding: 20px
     .slider2
         width: 100%
+    .footer
+        &__container
+            width: 90%
+            padding: 48px 0 64px
+        &__wrapper
+        &__items
+            flex-wrap: wrap
+            order: -1
+            justify-content: space-between
+            margin-bottom: 47px
+        &__top
+            flex-direction: column
+        &__bottom
+            display: none
+        &__title
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 20px
+        &__item
+            font-size: 14px
+            line-height: 20px
+        &__li:not(:last-child)
+            margin-bottom: 15px            
+    .social
+        width: 100%
+        margin: 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__logo
+            width: 77px
+            height: 24px
+            margin-bottom: 16px
+        &__text
+            text-align: center
+            font-size: 14px
+            line-height: 24px
+            margin-bottom: 16px
+
+    .product
+        width: 115px
+        height: 202px
+        margin: 0 0 39px
+    .company
+        width: 88px
+        height: 167px
+        margin: 0
+    .services
+        width: 107px
+        height: 202px
+        margin: 0 0 39px
+    .more
+        width: 102px
+        height: 132px
+        margin: 0
 
 @media (max-width: 640px)
     .card-collection
