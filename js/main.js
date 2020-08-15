@@ -29,8 +29,10 @@ let mySwiper = new Swiper('.slider1', {
     // Optional parameters
     loop: true,
     speed: 500,
-    autoplay: true,
-    delay: 6000,
+    autoplay: {
+      delay: 7000,
+    },
+    
   
     // If we need pagination
     pagination: {
@@ -97,4 +99,3 @@ $(".newsletter__form").each(function() {
 });
 
 $(".newsletter__form").validate();
-
