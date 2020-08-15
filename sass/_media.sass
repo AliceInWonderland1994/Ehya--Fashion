@@ -5,12 +5,48 @@
         &-button
             &__line
                 display: none
+    .nav
+        &__link:hover
+            color: $blue
+            transition-duration: 0.4s
+        &__button:hover
+            color: $dark
+            border-color: $dark
+            transition-duration: 0.4s
+    .collection
+        &__link:hover
+            opacity: 0.8
+            transition-duration: 0.5s
+    .card
+        &-collection:hover
+            background-color: $blue
+            opacity: 0.9
+    .slider
+        &__link:hover
+            color: $dark
+            transition-duration: 0.5s
+    .footer
+        &__item:hover
+            color: $blue
+            transition-duration: 0.3s
+    .hero
+        &__button:hover
+            background-color: $dark
+            opacity: 0.9
+
+
 
 @media (max-width: 1200px)
     .header
         &-button
             &__line
                 display: none
+    .nav
+        &__link:hover
+            color: $blue
+        &__button:hover
+            color: $dark
+            border-color: $dark
     .hero
         padding: 30px 0 80px
         &__container
@@ -61,6 +97,9 @@
             padding: 0 0 32px 0
     .card-collection
         width: 65%
+        &:hover
+            background-color: $blue
+            opacity: 0.9
     .story
         &__container
             width: 90%
@@ -114,6 +153,10 @@
         width: 145px
     .social
         margin-right: 20px
+    .slider
+        &__link:hover
+            color: $dark
+            transition-duration: 0.5s
             
 
 
@@ -121,6 +164,11 @@
     .nav
         &__li:not(:first-child)
             margin-left: 30px
+        &__link:hover
+            color: $dark
+        &__button:hover
+            color: $blue
+            border-color: $blue
     .header
         &__wrapper
             height: 64px
@@ -184,6 +232,9 @@
                 object-position: -120px -5px
     .card-collection
         width: 280px
+        &:hover
+            background-color: $blue
+            opacity: 1
     .feedback
         &__container
             max-width: 630px
@@ -219,6 +270,9 @@
     .services
         margin-right: 0
         margin-bottom: 48px
+    .slider
+        &__link:hover
+            color: $blue
 
 @media (max-width: 768px)
     .header
