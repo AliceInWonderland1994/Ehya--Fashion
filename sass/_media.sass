@@ -8,15 +8,15 @@
     .nav
         &__link:hover
             color: $blue
-            transition-duration: 0.4s
+            transition-duration: 0.3s
         &__button:hover
             color: $dark
             border-color: $dark
-            transition-duration: 0.4s
+            transition-duration: 0.3s
     .collection
         &__link:hover
             opacity: 0.8
-            transition-duration: 0.5s
+            transition-duration: 0.3s
     .card
         &-collection:hover
             background-color: $blue
@@ -24,7 +24,7 @@
     .slider
         &__link:hover
             color: $dark
-            transition-duration: 0.5s
+            transition-duration: 0.3s
     .slider
         &-button
             &-prev:hover
@@ -42,8 +42,13 @@
     .newsletter
         &__button:hover
                 opacity: 0.9
-
-
+    .story
+        &__wrapper
+            border-top: 1px solid #E5EAF4
+    .card
+        &__basket:hover
+            opacity: 0.8
+            transition-duration: 0.4s
 
 @media (max-width: 1200px)
     .header
@@ -233,6 +238,8 @@
                 width: 210%
                 height: 200%
                 object-position: -120px -5px
+        &__basket:hover
+            opacity: 1
     .card-collection
         width: 280px
         &:hover
@@ -288,6 +295,8 @@
                 border-color: $text
             &-next:hover
                 border-color: $dark
+    .slider1
+        height: 415px
     .newsletter
         &__button:hover
                 opacity: 1
@@ -645,7 +654,7 @@
             width: 95%
             margin: auto
         &__wrapper
-            padding: 48px 0 64px
+            padding: 48px 0 40px
         &__title
             font-size: 28px
             line-height: 36px
@@ -667,12 +676,19 @@
             &-next
                 padding: 17px 17px 15px 18px
         &__card
-            width: 90%
+            width: 280px
+            height: 407px
+            margin-bottom: 24px
+        &__image
+            height: 277px
+            width: 270px
         &__title
             font-size: 20px
             line-height: 24px
             margin-bottom: 16px
         &__info
+            width: 270px
+            height: 150px
             padding: 20px
     .slider2
         width: 100%
@@ -737,6 +753,8 @@
 @media (max-width: 640px)
     .card-collection
         width: 140px
+    .company
+        width: 100px
 
 @media (max-width: 576px)
     .header
@@ -917,3 +935,16 @@
     .card-collection
         height: 170px
         width: 140px
+    .slider1
+        height: 555px
+    .feedback
+        &__container
+            min-height: 555px
+        &__wrapper
+            min-height: 555px
+        &__author
+            margin-bottom: 24px
+    .swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets
+        height: 8px
+    .story
+        border-top: 1px solid #E5EAF4
