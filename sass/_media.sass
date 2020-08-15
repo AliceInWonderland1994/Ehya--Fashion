@@ -56,7 +56,7 @@
             &__line
                 display: none
     .hero
-        padding: 30px 0 80px
+        padding: 130px 0 80px
         &__container
             width: 95%
             margin: auto
@@ -183,6 +183,8 @@
         &-button
             &__line
                 display: none
+    .hero
+        padding-top: 74px
     .logo
         &__dark
             width: 89px
@@ -303,10 +305,10 @@
 
 @media (max-width: 768px)
     .header
-        &__wrapper
-            height: 72px
         &__container
             max-width: 650px
+        &__wrapper
+            margin-top: 8px
         &-button
                 display: flex
         &__mobile
@@ -353,7 +355,7 @@
             border: 2px solid $blue
             border-radius: 8px
     .hero
-        padding: 30px 0 80px
+        padding: 102px 0 80px
         &__container
             width: 95%
             margin: auto
@@ -823,13 +825,17 @@
             
 
 @media (min-width: 320px) and (max-width: 480px)
+    .header
+        &__wrapper
+            margin-top: 0
     .hero
-        padding: 24px 0 64px
+        padding: 88px 0 64px
         &__container
             width: 100%
             margin: 0
             right: 0
         &__wrapper
+            border-radius: 0
             min-height: 899px
             bottom: 0
             left: 0
