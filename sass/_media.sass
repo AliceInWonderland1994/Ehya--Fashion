@@ -70,17 +70,22 @@
             width: 95%
             margin: auto
         &__wrapper
-            background-position: 360px -330px
+            background-position: 260px -330px
             &::before
                 content: ""
                 position: absolute
                 top: 0
-                left: 360px
+                left: 260px
                 bottom: 0
                 right: 0
                 width: 100%
                 height: 100%
                 background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
+        &__information
+            position: absolute
+            top: 36px
+            left: 28px
+            bottom: 36px
     .collection
         &__container
             width: 90%
@@ -170,6 +175,23 @@
             transition-duration: 0.5s
             
 @media (max-width: 992px)
+    .hero
+        padding: 130px 0 80px
+        &__container
+            width: 95%
+            margin: auto
+        &__wrapper
+            background-position: 200px -330px
+            &::before
+                content: ""
+                position: absolute
+                top: 0
+                left: 200px
+                bottom: 0
+                right: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%)
     .nav
         &__li:not(:first-child)
             margin-left: 30px
@@ -529,6 +551,12 @@
                 object-position: 380px 300px
 
 @media (max-width: 740px)
+    .hero
+        &__container
+            width: 95%
+            margin: auto
+        &__wrapper
+            width: 100%
     .items
         &__container
             width: 90%
@@ -797,11 +825,18 @@
         height: 132px
         margin: 0
 
-@media (max-width: 640px)
+@media (max-width: 639px)
     .card-collection
         width: 65%
     .company
         width: 100px
+    .hero
+        &__container
+            width: 95%
+            margin: auto
+        &__wrapper
+            width: 100%
+
 
 @media (max-width: 576px)
     .header
@@ -810,11 +845,12 @@
         &__container
             width: 90%
     .hero
-        padding: 24px 0 64px
+        padding: 88px 0 64px
         &__container
             width: 100%
             margin: 0
         &__wrapper
+            border-radius: 0
             background-position: -20px -360px
             &::before
                 left: -40px
@@ -881,6 +917,7 @@
             margin: 0
             right: 0
         &__wrapper
+            width: 100%
             border-radius: 0
             min-height: 899px
             bottom: 0
@@ -932,12 +969,14 @@
             margin-right: 0
             margin-bottom: 16px
         &__border
-            padding: 4.5px 4.5px 0 4.5px
             border-radius: 8px
+            padding: 2.5px 3.5px
+            height: 24px
+            width: 24px
         &__li
             &--images
-                height: 15px
                 width: 15px
+                height: 15px
     .collection
         &__container
             width: 90%
