@@ -70,18 +70,12 @@
             width: 95%
             margin: auto
         &__wrapper
-            position: relative
-            background-color: #E8EAE9
-            overflow: hidden
-            border-radius: 8px
-            background-image: url(../img/hero-background.png)
-            background-repeat: no-repeat
-            background-position: 260px -330px
+            background-position: 360px -330px
             &::before
                 content: ""
                 position: absolute
                 top: 0
-                left: 260px
+                left: 360px
                 bottom: 0
                 right: 0
                 width: 100%
@@ -698,7 +692,7 @@
             width: 95%
             margin: auto
         &__wrapper
-            padding: 48px 0 40px
+            padding: 48px 0 64px
         &__title
             font-size: 28px
             line-height: 36px
@@ -882,7 +876,7 @@
             bottom: 0
             left: 0
             right: 0
-            background-position: -375px -348px
+            background-position: -370px -348px
             &::before
                 left: 0
                 background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%)
@@ -979,12 +973,17 @@
             line-height: 22px
         &__arrow
             margin-left: 30px
+        &__new-row
+            padding-left: 6.220px
     .items
         &__li:not(:last-child)
             margin-right: 14px
     .card-collection
         height: 170px
         width: 140px
+        padding: 40px 24px 29px
+        &__title
+            margin-top: 21px
     .slider1
         height: 555px
     .feedback
@@ -994,6 +993,12 @@
             min-height: 555px
         &__author
             margin-bottom: 24px
+        &__text
+            font-size: 18px
+            line-height: 36px
+            text-align: center
+            letter-spacing: 0.13px
+            width: 98%
     .swiper-pagination, .swiper-pagination-clickable, .swiper-pagination-bullets
         height: 8px
     .story
@@ -1002,6 +1007,42 @@
             padding: 2px 12px
         &__button
             margin-bottom: 26px
+        &__container
+            width: 90%
+            margin: auto
+        &__wrapper
+            width: 280px
+            margin: auto
+        &__tag
+            margin-bottom: 24px
+    .slider-button-prev, .slider-button-next
+        height: 56px
+        width: 56px
+    .slider
+        margin: 0
+        width: 280px
+        &__card
+            width: 280px
+            margin: 0
+            &--first
+                margin-left: 0
+                margin-bottom: 24px
+            
+        &__image
+            width: 270px
+    .slider2
+        width: 100%
+    .newsletter
+        &__oval
+            position: absolute
+            &--before
+                left: 0
+                width: 100%
+                object-position: -430px -480px
+            &--after
+                right: 0
+                width: 100%
+                object-position: 380px 300px
     .slider-button-prev
         width: 48px
         height: 48px
@@ -1034,7 +1075,12 @@
         &__logo
             width: 90px
             height: 28px
-            margin-bottom: 14px
+            margin-bottom: 12px
+            margin-left: 8px
+        &__text
+            margin-bottom: 18px
+        &__ul
+            margin-left: 12px
     .right, .left 
         width: 13px
         height: 16px
