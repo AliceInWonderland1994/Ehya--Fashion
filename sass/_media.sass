@@ -91,8 +91,7 @@
             width: 90%
             margin: auto
         &__wrapper
-            display: flex
-            flex-direction: column
+            width: 100%
             padding: 0 0 80px 0
         &__pictures
             width: 100%
@@ -102,41 +101,91 @@
             &--little
                 width: 100%
                 object-fit: cover
+            &--big
+                width: 260px
+                height: auto
+                margin-right: 20px 
         &__info
-            padding: 40px 0 0 0
-            width: 100%
+            padding: 40px 0 0 40px
+            width: 80%
+        &__text
+            font-size: 18px
+            line-height: 30px
     .items
         &__container
-            width: 80%
+            width: 90%
             margin: auto
         &__wrapper
+            width: 100%
             padding: 0 0 32px 0
+    .card
+        width: 210px
+        &__wrapper
+            width: 210px
+        &__info
+            width: 210px
+        &__title
+            font-size: 20px
+        &__image  
+            object-fit: cover
+            z-index: 1
+            &--one
+                width: 100%
+                height: 100%
+                object-position: -40px 0
+            &--two
+                width: 180%
+                height: 180%
+                object-position: -85px -38px
+            &--three
+                width: 130%
+                height: 130%
+                transform: scale(-1, 1)
+                object-position: -40px -25px
+            &--four
+                width: 140%
+                height: 140%
+                object-position: -60px -90px
+            &--five
+                width: 110%
+                height: 110%
+                object-position: -20px -20px
+            &--six
+                width: 220%
+                height: 220%
+                object-position: -130px -35px
+            &--seven
+                width: 180%
+                height: 180%
+                object-position: -105px -5px
     .card-collection
-        width: 65%
+        width: 210px
+        padding-left: 50px
+        padding-right: 50px
         &:hover
             background-color: $blue
             opacity: 0.9
     .story
         &__container
+            border-top: 1px solid #E5EAF4
             width: 90%
         &__wrapper
             padding: 80px 0 80px
-            display: flex
-            flex-direction: column
-            align-items: center
-        &__info
-            flex-direction: column
-            align-items: center
         &__title
-            width: 100%
-            margin-bottom: 16px
-            text-align: center
+            font-size: 40px
         &__text
-            width: 510px
-            margin-bottom: 36px
-            text-align: center
-        &__button
-            margin-bottom: 36px
+            font-size: 18px
+    .slider
+        justify-content: space-around
+        &__card
+            width: 240px
+        &__image
+            width: 240px
+        &__info
+            width: 240px
+        &__title
+            font-size: 18px
+            margin-bottom: 14px
     .newsletter
         &__container
             width: 80%
@@ -212,6 +261,25 @@
         &__dark
             width: 89px
             height: 28px
+    .collection
+        &__container
+            width: 90%
+            margin: auto
+        &__wrapper
+            display: flex
+            flex-direction: column
+            padding: 0 0 80px 0
+        &__pictures
+            width: 100%
+        &__little-pictures
+            width: 100%
+        &__image
+            &--little
+                width: 100%
+                object-fit: cover
+        &__info
+            padding: 40px 0 0 0
+            width: 100%
     .items
         &__container
             max-width: 608px
@@ -281,6 +349,62 @@
             margin-bottom: 36px
         &__author
             margin-bottom: 41px
+    .story
+        &__container
+            border-top: 1px solid #E5EAF4
+            width: 90%
+        &__wrapper
+            padding: 80px 0 80px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__info
+            flex-direction: column
+            align-items: center
+        &__title
+            width: 100%
+            margin-bottom: 16px
+            text-align: center
+        &__text
+            width: 510px
+            margin-bottom: 36px
+            text-align: center
+        &__button
+            margin-bottom: 36px
+    .slider
+        display: flex
+        justify-content: space-between
+        margin-top: 10px
+        &__card
+            position: relative
+            height: 475px
+            width: 322px
+            overflow: hidden
+        &__image
+            position: absolute
+            object-fit: cover
+            object-position: -10 -50px
+            height: 317px
+            width: 312px
+            border-radius: 8px 8px 0px 0px
+        &__info
+            position: absolute
+            background: $light
+            left: 10px
+            bottom: 0
+            right: 0
+            height: 178px
+            z-index: 10px
+            padding: 20px 32px 20px 20px
+        &__title
+            font-family: HK Grotesk
+            font-style: normal
+            font-weight: 600
+            font-size: 22px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: $dark
+            margin: 0 0 18px 0
     .footer
         &__container
             max-width: 672px
@@ -435,6 +559,9 @@
             &--little
                 width: 100%
                 object-fit: cover
+            &--big
+                width: 322px
+                margin-right: 30px
         &__info
             padding: 40px 0 0 0
         &__title
@@ -518,6 +645,7 @@
         height: 8px
     .story
         &__container
+            border-top: 1px solid #E5EAF4
             width: 728px
             margin: auto
         &__wrapper
@@ -525,17 +653,27 @@
             margin: auto
         &__tag
             margin-bottom: 24px
+        &__text
+            font-size: 20px
+            line-height: 36px
+            text-align: center
+            margin-bottom: 34px
     .slider-button-prev, .slider-button-next
         height: 56px
         width: 56px
     .slider
         margin: 0
         width: 672px
+        &__info
+            width: 100% 
         &__card
             &--first
                 margin-right: 18px
         &__image
             width: 322px
+        &__title
+            font-size: 22px
+            line-height: 32px
     .slider2
         width: 682px
     .newsletter
@@ -549,6 +687,9 @@
                 right: 0
                 width: 100%
                 object-position: 380px 300px
+    .social
+        &__text
+            margin-bottom: 30px
 
 @media (max-width: 740px)
     .hero
@@ -731,6 +872,7 @@
                 content: "- "
     .story
         &__container
+            border-top: 1px solid #E5EAF4
             width: 95%
             margin: auto
         &__wrapper
@@ -747,25 +889,41 @@
             margin-bottom: 36px
             width: 90%
     .slider
+        width: 100%
         display: flex
         flex-direction: column
         align-items: center
-        width: 100%
+        margin-top: 0
         &__card
-            width: 280px
-            height: 407px
-            margin-bottom: 24px
+            position: relative
+            height: 475px
+            width: 322px
+            overflow: hidden
         &__image
-            height: 277px
-            width: 270px
-        &__title
-            font-size: 20px
-            line-height: 24px
-            margin-bottom: 16px
+            position: absolute
+            object-fit: cover
+            object-position: -10 -50px
+            height: 317px
+            width: 312px
+            border-radius: 8px 8px 0px 0px
         &__info
-            width: 270px
-            height: 150px
-            padding: 20px
+            position: absolute
+            background: $light
+            left: 10px
+            bottom: 0
+            right: 0
+            height: 178px
+            z-index: 10px
+            padding: 20px 32px 20px 20px
+        &__title
+            font-family: HK Grotesk
+            font-style: normal
+            font-weight: 600
+            font-size: 22px
+            line-height: 32px
+            letter-spacing: 0.2px
+            color: $dark
+            margin: 0 0 18px 0
     .slider2
         width: 100%
     .footer
@@ -1034,6 +1192,27 @@
         padding: 40px 24px 29px
         &__title
             margin-top: 21px
+    .slider
+        width: 280px
+        align-items: center
+        &__card
+            width: 270px
+            height: 407px
+            &--first
+                margin-bottom: 24px
+                margin-right: 0
+        &__image
+            height: 277px
+            width: 270px
+        &__info
+            padding: 20px 40px 20px 20px
+            height: 150px
+            z-index: 10px
+        &__title
+            font-size: 20px
+            line-height: 24px
+            color: $dark
+            margin: 0 0 16px 0
     .slider1
         height: 555px
     .feedback
@@ -1053,6 +1232,10 @@
         height: 8px
     .story
         border-top: 1px solid #E5EAF4
+        &__container
+            width: 95%
+        &__wrapper
+            width: 288px
         &__tag
             padding: 2px 12px
         &__button
@@ -1060,23 +1243,14 @@
         &__container
             width: 90%
             margin: auto
-        &__wrapper
-            width: 280px
-            margin: auto
         &__tag
             margin-bottom: 24px
-    .slider
-        margin: 0
-        width: 280px
-        &__card
+        &__text
             width: 280px
-            margin: 0
-            &--first
-                margin-left: 0
-                margin-bottom: 24px
-            
-        &__image
-            width: 270px
+            font-size: 16px
+            line-height: 28px
+        &__button
+            margin-bottom: 24px
     .slider2
         width: 100%
     .newsletter
